@@ -35,12 +35,13 @@ count_loop:
     sd a0, (sp)         # preserve str *sp=a0
     sd t0, 8(sp)        # preserves count *(sp+8)=t0
     jal findc_s
-    li t2, -1           # if idx == -1
-    beq a0, t2, count_done
-    addi t3, a0, 1      # t3 is index
+    mv t3, a0           # t3 is index/ret val
     ld a0, (sp)         # restore str
     ld t0, 8(sp)        # restore t0
-    addi sp, sp,16      # dealloc
+    addi sp, sp, 16     # dealloc
+    li t2, -1           # if idx == -1
+    beq t3, t2, count_done
+    addi t3, t3, 1      # t3 is index
     addi t0, t0, 1      # count++
     add a0, a0, t3      # str += index
     j count_loop
