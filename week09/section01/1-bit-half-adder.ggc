@@ -1,0 +1,602 @@
+{
+  "version": "1.6",
+  "timestamp": "2026-10-21T18:05:51.100Z",
+  "name": "1-bit-half-adder",
+  "interface": {
+    "inputs": [],
+    "outputs": []
+  },
+  "nextCircuitId": 2,
+  "components": [
+    {
+      "id": "input_1_1792605105005",
+      "type": "input",
+      "x": 11,
+      "y": 8,
+      "props": {
+        "base": 10,
+        "bits": 1,
+        "rotation": 0,
+        "label": "A"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 1,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "input_2_1792605110562",
+      "type": "input",
+      "x": 11,
+      "y": 11,
+      "props": {
+        "base": 10,
+        "bits": 1,
+        "rotation": 0,
+        "label": "B"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 1,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "and-gate_1_1792605116566",
+      "type": "and-gate",
+      "x": 19,
+      "y": 14,
+      "props": {
+        "gateType": "and",
+        "numInputs": 2,
+        "bits": 1,
+        "label": "",
+        "rotation": 0,
+        "invertedInputs": [
+          0
+        ]
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": -1,
+          "y": 0,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": 0,
+          "y": 2,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 3.6666666666666665,
+          "y": 1,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "and-gate_1792605143468_kjl0wdz7v",
+      "type": "and-gate",
+      "x": 19,
+      "y": 19,
+      "props": {
+        "gateType": "and",
+        "numInputs": 2,
+        "bits": 1,
+        "label": "",
+        "rotation": 0,
+        "invertedInputs": [
+          1
+        ]
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 0,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": -1,
+          "y": 2,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 3.6666666666666665,
+          "y": 1,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "or-gate_1_1792605212100",
+      "type": "or-gate",
+      "x": 26,
+      "y": 16,
+      "props": {
+        "gateType": "or",
+        "numInputs": 2,
+        "bits": 1,
+        "label": "",
+        "rotation": 0,
+        "invertedInputs": []
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 0,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": 0,
+          "y": 2,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 4,
+          "y": 1,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "output_1_1792605231360",
+      "type": "output",
+      "x": 31,
+      "y": 17,
+      "props": {
+        "bits": 1,
+        "base": 10,
+        "color": null,
+        "rotation": 0,
+        "label": "SUM"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 0,
+          "direction": "input"
+        }
+      ]
+    },
+    {
+      "id": "and-gate_3_1792605308688",
+      "type": "and-gate",
+      "x": 19,
+      "y": 24,
+      "props": {
+        "gateType": "and",
+        "numInputs": 2,
+        "bits": 1,
+        "label": "",
+        "rotation": 0,
+        "invertedInputs": []
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 0,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": 0,
+          "y": 2,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 3.6666666666666665,
+          "y": 1,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "output_2_1792605328953",
+      "type": "output",
+      "x": 31,
+      "y": 26,
+      "props": {
+        "bits": 1,
+        "base": 10,
+        "color": null,
+        "rotation": 90,
+        "label": "COUT"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 0,
+          "direction": "input"
+        }
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire_1792605182615",
+      "points": [
+        {
+          "x": 12,
+          "y": 8
+        },
+        {
+          "x": 15,
+          "y": 8
+        },
+        {
+          "x": 15,
+          "y": 9
+        },
+        {
+          "x": 15,
+          "y": 14
+        },
+        {
+          "x": 18,
+          "y": 14
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 12,
+          "y": 8
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 18,
+          "y": 14
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1792605194001",
+      "points": [
+        {
+          "x": 15,
+          "y": 14
+        },
+        {
+          "x": 15,
+          "y": 19
+        },
+        {
+          "x": 19,
+          "y": 19
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 12,
+          "y": 8
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 19,
+          "y": 19
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1792605201291",
+      "points": [
+        {
+          "x": 12,
+          "y": 11
+        },
+        {
+          "x": 13,
+          "y": 11
+        },
+        {
+          "x": 13,
+          "y": 21
+        },
+        {
+          "x": 18,
+          "y": 21
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 12,
+          "y": 11
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 18,
+          "y": 21
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1792605208315",
+      "points": [
+        {
+          "x": 13,
+          "y": 16
+        },
+        {
+          "x": 19,
+          "y": 16
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 12,
+          "y": 11
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 19,
+          "y": 16
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1792605218930",
+      "points": [
+        {
+          "x": 22.666666666666668,
+          "y": 15
+        },
+        {
+          "x": 24,
+          "y": 15
+        },
+        {
+          "x": 24,
+          "y": 16
+        },
+        {
+          "x": 26,
+          "y": 16
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 22.666666666666668,
+          "y": 15
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 26,
+          "y": 16
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1792605223979",
+      "points": [
+        {
+          "x": 22.666666666666668,
+          "y": 20
+        },
+        {
+          "x": 24,
+          "y": 20
+        },
+        {
+          "x": 24,
+          "y": 18
+        },
+        {
+          "x": 26,
+          "y": 18
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 22.666666666666668,
+          "y": 20
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 26,
+          "y": 18
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1792605237137",
+      "points": [
+        {
+          "x": 30,
+          "y": 17
+        },
+        {
+          "x": 31,
+          "y": 17
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 30,
+          "y": 17
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 31,
+          "y": 17
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1792605320468",
+      "points": [
+        {
+          "x": 15,
+          "y": 19
+        },
+        {
+          "x": 15,
+          "y": 24
+        },
+        {
+          "x": 19,
+          "y": 24
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 12,
+          "y": 8
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 19,
+          "y": 24
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1792605326321",
+      "points": [
+        {
+          "x": 13,
+          "y": 21
+        },
+        {
+          "x": 13,
+          "y": 26
+        },
+        {
+          "x": 19,
+          "y": 26
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 12,
+          "y": 11
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 19,
+          "y": 26
+        },
+        "portType": "input"
+      },
+      "bits": 1
+    },
+    {
+      "id": "wire_1792605949560",
+      "points": [
+        {
+          "x": 22.666666666666668,
+          "y": 25
+        },
+        {
+          "x": 31,
+          "y": 25
+        },
+        {
+          "x": 31,
+          "y": 26
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 22.666666666666668,
+          "y": 25
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 31,
+          "y": 26
+        },
+        "portType": "input"
+      }
+    }
+  ],
+  "wireJunctions": [
+    {
+      "pos": {
+        "x": 15,
+        "y": 14
+      },
+      "sourceWireIndex": 0,
+      "connectedWireId": "wire_1792605194001"
+    },
+    {
+      "pos": {
+        "x": 13,
+        "y": 16
+      },
+      "sourceWireIndex": 2,
+      "connectedWireId": "wire_1792605208315"
+    },
+    {
+      "pos": {
+        "x": 15,
+        "y": 19
+      },
+      "sourceWireIndex": 1,
+      "connectedWireId": "wire_1792605320468"
+    },
+    {
+      "pos": {
+        "x": 13,
+        "y": 21
+      },
+      "sourceWireIndex": 2,
+      "connectedWireId": "wire_1792605326321"
+    }
+  ],
+  "schematicComponents": {}
+}
