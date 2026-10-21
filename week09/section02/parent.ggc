@@ -1,0 +1,295 @@
+{
+  "version": "1.6",
+  "timestamp": "2026-10-21T21:19:57.152Z",
+  "name": "parent",
+  "interface": {
+    "inputs": [],
+    "outputs": []
+  },
+  "nextCircuitId": 2,
+  "components": [
+    {
+      "id": "schematic-component_1_1792614928847",
+      "type": "schematic-component",
+      "x": 18,
+      "y": 17,
+      "props": {
+        "label": "section02",
+        "filename": "max2-demo.ggc"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 1,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": 0,
+          "y": 3,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 3,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "schematic-component_2_1792616611571",
+      "type": "schematic-component",
+      "x": 18,
+      "y": 24,
+      "props": {
+        "label": "section02",
+        "filename": "max2-demo.ggc"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 1,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": 0,
+          "y": 3,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 3,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "constant_1_1792616963770",
+      "type": "constant",
+      "x": 20,
+      "y": 14,
+      "props": {
+        "value": 0,
+        "base": 10,
+        "bits": 1,
+        "rotation": 0
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 1,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "splitter_1_1792617207987",
+      "type": "splitter",
+      "x": 9,
+      "y": 22,
+      "props": {
+        "inputBits": 8,
+        "ranges": [
+          {
+            "start": 0,
+            "end": 0
+          },
+          {
+            "start": 1,
+            "end": 1
+          },
+          {
+            "start": 2,
+            "end": 2
+          },
+          {
+            "start": 3,
+            "end": 3
+          },
+          {
+            "start": 4,
+            "end": 4
+          },
+          {
+            "start": 5,
+            "end": 5
+          },
+          {
+            "start": 6,
+            "end": 6
+          },
+          {
+            "start": 7,
+            "end": 7
+          }
+        ],
+        "rotation": 0
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 5,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 2,
+          "y": 1,
+          "direction": "output"
+        },
+        {
+          "name": "1",
+          "x": 2,
+          "y": 2,
+          "direction": "output"
+        },
+        {
+          "name": "2",
+          "x": 2,
+          "y": 3,
+          "direction": "output"
+        },
+        {
+          "name": "3",
+          "x": 2,
+          "y": 4,
+          "direction": "output"
+        },
+        {
+          "name": "4",
+          "x": 2,
+          "y": 5,
+          "direction": "output"
+        },
+        {
+          "name": "5",
+          "x": 2,
+          "y": 6,
+          "direction": "output"
+        },
+        {
+          "name": "6",
+          "x": 2,
+          "y": 7,
+          "direction": "output"
+        },
+        {
+          "name": "7",
+          "x": 2,
+          "y": 8,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "merger_1_1792617311888",
+      "type": "merger",
+      "x": 37,
+      "y": 20,
+      "props": {
+        "outputBits": 8,
+        "ranges": [
+          {
+            "start": 0,
+            "end": 0
+          },
+          {
+            "start": 1,
+            "end": 1
+          },
+          {
+            "start": 2,
+            "end": 2
+          },
+          {
+            "start": 3,
+            "end": 3
+          },
+          {
+            "start": 4,
+            "end": 4
+          },
+          {
+            "start": 5,
+            "end": 5
+          },
+          {
+            "start": 6,
+            "end": 6
+          },
+          {
+            "start": 7,
+            "end": 7
+          }
+        ],
+        "rotation": 0
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 1,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": 0,
+          "y": 2,
+          "direction": "input"
+        },
+        {
+          "name": "2",
+          "x": 0,
+          "y": 3,
+          "direction": "input"
+        },
+        {
+          "name": "3",
+          "x": 0,
+          "y": 4,
+          "direction": "input"
+        },
+        {
+          "name": "4",
+          "x": 0,
+          "y": 5,
+          "direction": "input"
+        },
+        {
+          "name": "5",
+          "x": 0,
+          "y": 6,
+          "direction": "input"
+        },
+        {
+          "name": "6",
+          "x": 0,
+          "y": 7,
+          "direction": "input"
+        },
+        {
+          "name": "7",
+          "x": 0,
+          "y": 8,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 2,
+          "y": 5,
+          "direction": "output"
+        }
+      ]
+    }
+  ],
+  "wires": [],
+  "wireJunctions": [],
+  "schematicComponents": {}
+}
