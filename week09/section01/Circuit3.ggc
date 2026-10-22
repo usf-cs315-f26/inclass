@@ -1,0 +1,57 @@
+{
+  "version": "1.6",
+  "timestamp": "2026-10-22T15:09:44.483Z",
+  "name": "Circuit3",
+  "interface": {
+    "inputs": [],
+    "outputs": []
+  },
+  "nextCircuitId": 2,
+  "components": [
+    {
+      "id": "schematic-component_1_1792681722397",
+      "type": "schematic-component",
+      "x": 27,
+      "y": 11,
+      "props": {
+        "label": "1-bit-half-adder",
+        "filename": "1-bit-half-adder.ggc"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 1,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": 0,
+          "y": 3,
+          "direction": "input"
+        },
+        {
+          "name": "2",
+          "x": 3,
+          "y": 0,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 6,
+          "y": 2,
+          "direction": "output"
+        },
+        {
+          "name": "1",
+          "x": 3,
+          "y": 4,
+          "direction": "output"
+        }
+      ]
+    }
+  ],
+  "wires": [],
+  "wireJunctions": [],
+  "schematicComponents": {}
+}
