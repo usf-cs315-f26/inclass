@@ -1,10 +1,14 @@
 {
   "version": "1.6",
-  "timestamp": "2026-10-21T18:05:51.100Z",
+  "timestamp": "2026-10-22T15:10:09.242Z",
   "name": "1-bit-half-adder",
   "interface": {
     "inputs": [],
     "outputs": []
+  },
+  "appearance": {
+    "sizeMode": "manual",
+    "height": 6
   },
   "nextCircuitId": 2,
   "components": [
@@ -227,6 +231,26 @@
           "x": 0,
           "y": 0,
           "direction": "input"
+        }
+      ]
+    },
+    {
+      "id": "input_3_1792681767644",
+      "type": "input",
+      "x": 9,
+      "y": 30,
+      "props": {
+        "base": 10,
+        "bits": 1,
+        "rotation": 90,
+        "label": "CIN"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 1,
+          "y": 0,
+          "direction": "output"
         }
       ]
     }
