@@ -1,0 +1,162 @@
+{
+  "version": "1.6",
+  "timestamp": "2026-10-22T20:23:21.960Z",
+  "name": "Circuit4",
+  "interface": {
+    "inputs": [],
+    "outputs": []
+  },
+  "nextCircuitId": 2,
+  "components": [
+    {
+      "id": "schematic-component_1_1792698660587",
+      "type": "schematic-component",
+      "x": 35,
+      "y": 46,
+      "props": {
+        "label": "1-bit-half-adder",
+        "filename": "1-bit-half-adder.ggc"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 1,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": 0,
+          "y": 5,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 6,
+          "y": 3,
+          "direction": "output"
+        },
+        {
+          "name": "1",
+          "x": 3,
+          "y": 6,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "schematic-component_2_1792698667362",
+      "type": "schematic-component",
+      "x": 18,
+      "y": 9,
+      "props": {
+        "label": "1-bit-half-adder",
+        "filename": "1-bit-half-adder.ggc"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 1,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": 0,
+          "y": 5,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 6,
+          "y": 3,
+          "direction": "output"
+        },
+        {
+          "name": "1",
+          "x": 3,
+          "y": 6,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "schematic-component_3_1792698689956",
+      "type": "schematic-component",
+      "x": 37,
+      "y": 48,
+      "props": {
+        "label": "1-bit-half-adder",
+        "filename": "1-bit-half-adder.ggc"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 1,
+          "direction": "input"
+        },
+        {
+          "name": "1",
+          "x": 0,
+          "y": 5,
+          "direction": "input"
+        },
+        {
+          "name": "0",
+          "x": 6,
+          "y": 3,
+          "direction": "output"
+        },
+        {
+          "name": "1",
+          "x": 3,
+          "y": 6,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "clock_1_1792699432201",
+      "type": "clock",
+      "x": 14,
+      "y": 20,
+      "props": {
+        "frequency": 18,
+        "rotation": 0,
+        "mode": "manual"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 1,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "input_1_1792699451332",
+      "type": "input",
+      "x": 22,
+      "y": 20,
+      "props": {
+        "base": 10,
+        "bits": 1,
+        "rotation": 0,
+        "label": "CLK"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 1,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
+    }
+  ],
+  "wires": [],
+  "wireJunctions": [],
+  "schematicComponents": {}
+}
