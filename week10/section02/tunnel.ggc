@@ -1,0 +1,227 @@
+{
+  "version": "1.6",
+  "timestamp": "2026-10-28T21:23:34.876Z",
+  "name": "tunnel",
+  "interface": {
+    "inputs": [],
+    "outputs": []
+  },
+  "nextCircuitId": 2,
+  "components": [
+    {
+      "id": "input_1_1793222356402",
+      "type": "input",
+      "x": 9,
+      "y": 9,
+      "props": {
+        "base": 10,
+        "bits": 8,
+        "rotation": 0,
+        "label": "A"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 1,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "tunnel_1_1793222359985",
+      "type": "tunnel",
+      "x": 13,
+      "y": 8,
+      "props": {
+        "label": "mol",
+        "rotation": 0,
+        "direction": "input"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 1,
+          "direction": "input"
+        }
+      ]
+    },
+    {
+      "id": "output_1_1793222372403",
+      "type": "output",
+      "x": 28,
+      "y": 10,
+      "props": {
+        "bits": 8,
+        "base": 10,
+        "color": null,
+        "rotation": 0,
+        "label": "R"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 0,
+          "direction": "input"
+        }
+      ]
+    },
+    {
+      "id": "tunnel_2_1793222381935",
+      "type": "tunnel",
+      "x": 25,
+      "y": 9,
+      "props": {
+        "label": "mol",
+        "rotation": 180,
+        "direction": "output"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 2,
+          "y": 1,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "input_1793222500257_c6n2nqtoc",
+      "type": "input",
+      "x": 9,
+      "y": 13,
+      "props": {
+        "base": 10,
+        "bits": 8,
+        "rotation": 0,
+        "label": "B"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 1,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "tunnel_1793222500257_zu0otzahy",
+      "type": "tunnel",
+      "x": 13,
+      "y": 12,
+      "props": {
+        "label": "mol",
+        "rotation": 0,
+        "direction": "input",
+        "hasError": true,
+        "hasWarning": false,
+        "errorMessageId": "simulation.errors.tunnelMultipleDrivers",
+        "errorDetails": {
+          "portName": null,
+          "connectedComponentId": null,
+          "component_label": "mol",
+          "label": "mol"
+        }
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 1,
+          "direction": "input"
+        }
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire_1793222369010",
+      "points": [
+        {
+          "x": 10,
+          "y": 9
+        },
+        {
+          "x": 13,
+          "y": 9
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 10,
+          "y": 9
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 13,
+          "y": 9
+        },
+        "portType": "input"
+      },
+      "bits": 8
+    },
+    {
+      "id": "wire_1793222388377",
+      "points": [
+        {
+          "x": 27,
+          "y": 10
+        },
+        {
+          "x": 28,
+          "y": 10
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 27,
+          "y": 10
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 28,
+          "y": 10
+        },
+        "portType": "input"
+      },
+      "bits": 8
+    },
+    {
+      "id": "wire_1793222500257_2eay9s8kn",
+      "points": [
+        {
+          "x": 10,
+          "y": 13
+        },
+        {
+          "x": 13,
+          "y": 13
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 10,
+          "y": 13
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 13,
+          "y": 13
+        },
+        "portType": "input"
+      },
+      "bits": 8
+    }
+  ],
+  "wireJunctions": [],
+  "schematicComponents": {}
+}
