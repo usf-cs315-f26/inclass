@@ -1,6 +1,6 @@
 {
   "version": "1.6",
-  "timestamp": "2026-10-28T18:27:33.984Z",
+  "timestamp": "2026-10-29T15:56:17.982Z",
   "name": "priority",
   "interface": {
     "inputs": [],
@@ -147,7 +147,7 @@
         "base": 10,
         "color": null,
         "rotation": 0,
-        "label": "R"
+        "label": "ITYPE"
       },
       "ports": [
         {
