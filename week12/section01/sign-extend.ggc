@@ -1,0 +1,139 @@
+{
+  "version": "1.6",
+  "timestamp": "2026-11-10T17:23:23.986Z",
+  "name": "sign-extend",
+  "interface": {
+    "inputs": [],
+    "outputs": []
+  },
+  "nextCircuitId": 2,
+  "components": [
+    {
+      "id": "input_1_1794331274339",
+      "type": "input",
+      "x": 12,
+      "y": 19,
+      "props": {
+        "base": 16,
+        "bits": 12,
+        "rotation": 0,
+        "label": "A"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 1,
+          "y": 0,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "signExtend_1_1794331279106",
+      "type": "signExtend",
+      "x": 17,
+      "y": 18,
+      "props": {
+        "inBits": 12,
+        "outBits": 64,
+        "label": "SE",
+        "rotation": 0
+      },
+      "ports": [
+        {
+          "name": "in",
+          "x": 0,
+          "y": 1,
+          "direction": "input"
+        },
+        {
+          "name": "out",
+          "x": 4,
+          "y": 1,
+          "direction": "output"
+        }
+      ]
+    },
+    {
+      "id": "output_1_1794331292838",
+      "type": "output",
+      "x": 26,
+      "y": 19,
+      "props": {
+        "bits": 64,
+        "base": 16,
+        "color": null,
+        "rotation": 0,
+        "label": "R"
+      },
+      "ports": [
+        {
+          "name": "0",
+          "x": 0,
+          "y": 0,
+          "direction": "input"
+        }
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire_1794331322697",
+      "points": [
+        {
+          "x": 13,
+          "y": 19
+        },
+        {
+          "x": 17,
+          "y": 19
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 13,
+          "y": 19
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 17,
+          "y": 19
+        },
+        "portType": "input"
+      },
+      "bits": 12
+    },
+    {
+      "id": "wire_1794331325697",
+      "points": [
+        {
+          "x": 21,
+          "y": 19
+        },
+        {
+          "x": 26,
+          "y": 19
+        }
+      ],
+      "startConnection": {
+        "pos": {
+          "x": 21,
+          "y": 19
+        },
+        "portType": "output"
+      },
+      "endConnection": {
+        "pos": {
+          "x": 26,
+          "y": 19
+        },
+        "portType": "input"
+      },
+      "bits": 64
+    }
+  ],
+  "wireJunctions": [],
+  "schematicComponents": {}
+}
